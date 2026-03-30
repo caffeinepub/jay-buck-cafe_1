@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("/assets/fonts/PlayfairDisplay.woff2") format("woff2");
+  font-weight: 400 800;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("/assets/fonts/DMSans.woff2") format("woff2");
+  font-weight: 400 700;
+  font-display: swap;
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+    /* Espresso dark */
+    --background: 0.97 0.012 60;
+    --foreground: 0.18 0.04 45;
+    --card: 1 0 0;
+    --card-foreground: 0.18 0.04 45;
+    --popover: 1 0 0;
+    --popover-foreground: 0.18 0.04 45;
+    /* Amber caramel primary */
+    --primary: 0.62 0.14 60;
+    --primary-foreground: 1 0 0;
+    --secondary: 0.92 0.03 60;
+    --secondary-foreground: 0.18 0.04 45;
+    --muted: 0.93 0.015 55;
+    --muted-foreground: 0.52 0.04 50;
+    --accent: 0.62 0.14 60;
+    --accent-foreground: 1 0 0;
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+    --border: 0.87 0.025 55;
+    --input: 0.87 0.025 55;
+    --ring: 0.62 0.14 60;
+    --chart-1: 0.646 0.222 41.116;
+    --chart-2: 0.6 0.118 184.704;
+    --chart-3: 0.398 0.07 227.392;
+    --chart-4: 0.828 0.189 84.429;
+    --chart-5: 0.769 0.188 70.08;
+    --sidebar: 0.985 0 0;
+    --sidebar-foreground: 0.145 0 0;
+    --sidebar-primary: 0.205 0 0;
+    --sidebar-primary-foreground: 0.985 0 0;
+    --sidebar-accent: 0.97 0 0;
+    --sidebar-accent-foreground: 0.205 0 0;
+    --sidebar-border: 0.922 0 0;
+    --sidebar-ring: 0.708 0 0;
+    /* Cafe custom tokens */
+    --espresso: #1f140e;
+    --espresso-deep: #2a1a12;
+    --cream: #f3e6d6;
+    --parchment: #f7efe3;
+    --amber: #c7924a;
+    --amber-light: #d2a15a;
+    --off-white: #f5efe6;
+    --muted-brown: #b9a89a;
+    --hero-overlay: rgba(20, 12, 8, 0.65);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    font-family: "DM Sans", system-ui, sans-serif;
+    background-color: var(--parchment);
+    color: var(--espresso);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: "Playfair Display", Georgia, serif;
+  }
+}
